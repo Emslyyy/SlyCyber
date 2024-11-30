@@ -651,6 +651,15 @@
                 submitButton.classList.remove('loading');
             }
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const submitButton = document.querySelector('button[type="submit"]');
+            if (submitButton) {
+                submitButton.addEventListener('click', function() {
+                    // Your event handling code here
+                });
+            }
+        });
     </script>
 </body>
 </html>
